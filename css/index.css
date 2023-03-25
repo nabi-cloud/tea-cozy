@@ -195,7 +195,7 @@ a {
 ======================================== */
 .mission-section { /*Mission*/
     align-items: center;
-    background-image: url(/resources/img-mission-background.jpg);
+    background-image: url('/resources/img-mission-background.jpg');
     display: flex;
     height: 700px;
 }
@@ -349,7 +349,7 @@ a {
 }
 
 .locations-section { /*Locations*/
-    background-image: url(/resources/img-locations-background.jpg);
+    background-image: url('/resources/img-locations-background.jpg');
     height: 570px;
     text-align: center;
 }
