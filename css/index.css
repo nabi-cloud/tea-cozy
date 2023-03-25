@@ -1,0 +1,437 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Page Styles
+======================================== */
+
+
+/* 1. Global Styles
+======================================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+main, footer {
+    position: relative;
+    top: 69px;
+    z-index: -1;
+}
+
+
+/* 2. Typography Styles
+======================================== */
+h2,
+h3,
+h4,
+h5 {
+    color: seashell;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    opacity: 0.9;
+    transition: font-size 0.5s ease;
+}
+
+h2 {
+    font-size: calc(40px / 1.5);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: calc(32px / 1.5);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: calc(24px / 1.5);
+}
+
+h5 {
+    font-size: calc(20px / 1.25);
+}
+
+a {
+    color: seashell;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 400px) {
+    a {
+        font-size: 16px;
+    }
+}
+
+
+/* 3. Structure Styles
+======================================== */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container.tea-section {
+    max-width: 1000px;
+    margin-top: 100px;
+}
+
+
+/* 4. Module Styles
+======================================== */
+/* Site Navigation */
+.site-nav {
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    height: 69px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-left,
+.nav-right {
+    align-items: center;
+    display: flex;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.site-nav li {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.site-nav li:link {
+    color: seashell;
+}
+
+.site-nav li:visited {
+    color: seashell;
+}
+
+.site-nav li:hover {
+    color: white;
+    border-bottom: 1px solid white;
+    opacity: 0.5;
+    transition: 0.25s ease;
+}
+
+.site-nav li:active {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.site-nav .logo {
+    height: 50px;
+    transition: height 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+@media only screen and (max-width: 500px) {
+    .site-nav .logo {
+        height: 35px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .site-nav .logo {
+        height: 25px;
+        width: 75px;
+    }
+}
+
+/* Site Footer */
+.footer-text {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+#column {
+    flex-direction: column;
+}
+
+.copyright {
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* 5. Page Styles
+======================================== */
+.mission-section { /*Mission*/
+    align-items: center;
+    background-image: url(/resources/img-mission-background.jpg);
+    display: flex;
+    height: 700px;
+}
+
+.mission-text {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    width: 1200px;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 700px) {
+    .mission-section {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mission-section {
+        height: 500px;
+    }
+    
+    .mission-text {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mission-section {
+        height: 500px;
+    }
+
+    .mission-text {
+        padding: 15px;
+    }
+}
+
+.tea-text { /*Tea*/
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tea-img-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-around;
+}
+
+.tea-img-div {
+    margin-bottom: 20px;
+    text-align: center;
+}   
+
+.tea-img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.tea-img-div-1 {
+    text-align: center;
+}
+
+.tea-img-1 {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: 160px;
+}
+
+.tea-img-div-2 {
+    text-align: center;
+}
+
+.tea-img-2 {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-right: 160px;
+} 
+
+@media only screen and (max-width: 1000px) {
+    .tea-section {
+        height: 700px;
+    }
+    
+    .tea-img-div-1 {
+        flex-wrap: wrap;
+        margin-left: 150px;
+    }
+
+    .tea-img-1 {    
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+
+    .tea-img-div-2 {
+        flex-wrap: wrap;
+        height: fit-content;
+        margin-right: 150px;
+        padding-top: 0;
+    }
+
+    .tea-img-2 {
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .tea-section {
+        height: 1000px;
+    }
+
+    .tea-img-container {
+        height: 1000px;
+    }
+
+    .tea-img-div-1 {
+        height: 255px;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .tea-img-div-2 {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tea-section {
+        height: 1250px;
+    }
+
+    .tea-img-container {
+        height: 1100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .tea-section {
+        height: 1550px;
+    }
+
+    .tea-img-container {
+        height: 1500px;
+    }
+}
+
+.locations-section { /*Locations*/
+    background-image: url(/resources/img-locations-background.jpg);
+    height: 570px;
+    text-align: center;
+}
+
+.locations-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    justify-content: center;
+}
+
+.locations-divs {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.locations-div {
+    background-color: black;
+    height: 250px;
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.div-3 {
+    margin: 0;
+    text-align: center;
+}
+
+.locations-div h3,
+.locations-div h4 {
+    line-height: 2.5;
+}
+
+@media only screen and (max-width: 1000px) {
+    .locations-section {
+        height: 700px;
+    }
+
+    .locations-container {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .locations-section {
+        box-sizing: border-box;
+        height: 700px;
+    }
+
+    .locations-container {
+        height: 700px;
+    }
+
+    .locations-div {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .locations-section {
+        box-sizing: border-box;
+        height: 1000px;
+    }
+
+    .locations-container {
+        height: 1000px;
+    }
+
+    .locations-text {
+        color: black;
+    }
+
+    .locations-div {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
