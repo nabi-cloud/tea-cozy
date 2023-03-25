@@ -195,7 +195,8 @@ a {
 ======================================== */
 .mission-section { /*Mission*/
     align-items: center;
-    background-image: url(tea-cozy/resources/img-mission-background.jpg);
+    background-image: url('/resources/img-mission-background.jpg');
+    background-position: center;
     display: flex;
     height: 700px;
 }
@@ -349,7 +350,7 @@ a {
 }
 
 .locations-section { /*Locations*/
-    background-image: url(/tea-cozy/resources/img-locations-background.jpg);
+    background-image: url('/resources/img-locations-background.jpg');
     height: 570px;
     text-align: center;
 }
