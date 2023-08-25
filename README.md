@@ -50,3 +50,7 @@ At times, the layout appeared misaligned or distorted on certain devices. Throug
 I realized the importance of resilience and patience in problem-solving. It is natural for projects to encounter roadblocks, but learning to persevere and approach issues with a problem-solving mindset is crucial.
 
 In cases where I encountered problems that was detrimental to my productivity, I sought guidance from professionals in web development communities and forums. Reaching out for help not only expanded my knowledge but also exposed me to alternative perspectives and solutions.
+
+<br>
+
+@Mar 2023
